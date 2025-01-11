@@ -1,0 +1,657 @@
+.consegna-gratuita {
+  background-color: #f0f8ff; /* Colore di sfondo chiaro */
+  color: #2c3e50; /* Colore del testo scuro */
+  text-align: center; /* Allineamento centrale */
+  padding: 1vw; /* Padding interno */
+  font-size: 1.5vw; /* Dimensione del font */
+  border: 0px solid #2980b9; /* Bordo di colore blu */
+  margin: auto; /* Margine sotto il div */
+  border-radius: 5px; /* Angoli arrotondati */
+}
+/* grassetto consegna gratuita */
+#Grassetto{
+  background-color: #f0f8ff; /* Colore di sfondo chiaro */
+  color: #2c3e50; /* Colore del testo scuro */
+  text-align: center; /* Allineamento centrale */
+  padding: 10px; /* Padding interno */
+  font-size: 16px; /* Dimensione del font */
+  font-weight: bold; /* Grassetto */
+  border: 0px solid #2980b9; /* Bordo di colore blu */
+  margin: auto; /* Margine sotto il div */
+  border-radius: 5px; /* Angoli arrotondati */
+}
+.icon-furgoncino {
+    width: 2vw; /* Larghezza dell'icona */
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+    vertical-align: middle; /* Allinea verticalmente l'immagine con il testo */
+    margin-right: 1vw; /* Margine a destra per separare l'immagine dal testo */
+}
+/* header marchio ricerca e lingua */
+.header {
+    display: flex; /* Usa Flexbox per allineare gli elementi sulla stessa riga */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: space-between; /* Spaziatura uniforme tra gli elementi */
+    padding: 1vw; /* Padding interno */
+
+}
+
+.logo {
+    display: flex; /* Usa Flexbox per allineare logo e testo */
+    align-items: center; /* Allinea logo e testo verticalmente */
+}
+
+.logo img {
+    width: 5vw; /* Imposta la larghezza del logo */
+    height: auto; /* Mantieni le proporzioni del logo */
+    margin-right: 1vw; /* Margine a destra per separare il logo dal testo */
+}
+/* noe ditta */
+/* Contenitore per il testo (nome ditta + slogan) */
+.logo-text {
+    display: flex;
+    flex-direction: column; /* Dispone il nome e lo slogan in colonna */
+    align-items: flex-start; /* Allinea il testo a sinistra (o usa center per centrare) */
+}
+
+/* Nome della ditta */
+.nome-ditta {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0; /* Rimuove i margini predefiniti */
+}
+
+/* Slogan */
+.slogan {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: normal;
+    margin-top: 0.2em; /* Distanza tra il nome e lo slogan */
+}
+.search-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente gli elementi al centro */
+    justify-content: center; /* Centra la barra di ricerca orizzontalmente */
+    margin: 0 auto; /* Centra la barra rispetto al contenitore */
+    width: 60vw; /* Rende la barra più lunga */
+    gap: 1vw; /* Spaziatura uniforme tra gli elementi */
+}
+
+.search-container input {
+    padding: 1vw; /* Spaziatura interna */
+    border: 1px solid #2980b9;
+    border-radius: 5px;
+    width: 100%; /* Occupa tutto lo spazio disponibile nel contenitore */
+    font-size: 1vw;
+}
+
+/* Bandiera e testo "Made in Italy" */
+.made-in-italy {
+    margin-left: 0.5vw; /* Riduci il margine per avvicinarlo alla bandiera */
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1vw; /* Rendi il testo più piccolo */
+    color: #000;
+    display: flex; /* Allinea il contenuto in linea con la bandiera */
+    align-items: center; /* Centra verticalmente il testo con la bandiera */
+    white-space: nowrap; /* Impedisce che il testo vada su più righe */
+}
+
+.bandiera-italiana {
+    width: 2vw;
+    height: auto;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+}
+
+/* Selettore Lingua */
+.lingua {
+    margin-left: 1vw; /* Margine per distanziare dal testo "Made in Italy" */
+    padding: 0.5vw;
+    font-size: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+/* Formattazione NAV */
+nav {
+    display: flex; /* Imposta il contenitore come flexbox */
+    justify-content: center; /* Centra i link orizzontalmente */
+    gap: 3vw; /* Spazio tra i link */
+    background-color: #f1f1f1; /* Colore di sfondo (opzionale) */
+    padding: 1vw; /* Aggiunge un po' di spazio interno (opzionale) */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+}
+
+.dropdown {
+    position: relative; /* Posizione relativa per il contenitore del dropdown */
+    display: inline-block; /* Visualizza come inline-block */
+}
+
+.dropbtn {
+    background-color: #f1f1f1; /* Colore di sfondo */
+    color: #6f6f6f; /* Colore del testo */
+    padding: 10px 20px; /* Padding */
+    font-size: 1.5vw; /* Dimensione del font (uguale a nav a) */
+    border: none; /* Nessun bordo */
+    cursor: pointer; /* Cambia il cursore */
+    height: 100%; /* Allineamento verticale */
+    font-family: arial, sans-serif; /* Stessa famiglia di caratteri dei link */
+    text-decoration: none; /* Nessuna decorazione */
+    white-space: nowrap; /* Impedisce la rottura del testo */
+    transition: color 0.3s; /* Transizione morbida del colore */
+    outline: none; /* Rimuove il bordo di focus */
+}
+
+.dropbtn:hover {
+    color: red; /* Colore rosso al passaggio del mouse */
+}
+
+.dropbtn:focus {
+    color: #6f6f6f; /* Ripristina il colore principale quando perde il focus */
+}
+
+.dropbtn:active {
+    color: red; /* Colore rosso durante il clic */
+}
+
+/* Stile per il contenuto del dropdown */
+.dropdown-content {
+    display: none; /* Nascondi la lista di prodotti di default */
+    position: absolute; /* Posizione assoluta per la lista */
+    background-color: #f9f9f9; /* Colore di sfondo della lista */
+    min-width: 800px; /* Larghezza minima della lista per adattarsi a 4 colonne */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Ombra per la lista */
+    z-index: 1; /* Sovrappone la lista sopra altri elementi */
+    display: flex; /* Usa il layout flex per posizionare le colonne una accanto all'altra */
+    font-family: "Times New Roman", Times, serif;
+}
+
+.column {
+    flex: 1; /* Le colonne occupano lo stesso spazio */
+    padding: 10px; /* Padding per ogni colonna */
+}
+
+.dropdown-content a {
+    color: black; /* Colore del testo dei link */
+    padding: 8px 16px; /* Padding per i link */
+    text-decoration: none; /* Nessuna decorazione */
+    display: block; /* Mostra i link come blocchi */
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal; /* Rimuovi il grassett
+
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.category {
+  font-weight: bold; /* Testo della categoria in grassetto */
+  margin-bottom: 5px; /* Spazio sotto il nome della categoria */
+}
+/* formattazione bottoni categoria */
+.category-button {
+    background-color: transparent; /* Trasparente per il pulsante */
+    color: #6f6f6f; /* Colore del testo */
+    padding: 8px 16px; /* Padding per il pulsante */
+    border: none; /* Nessun bordo */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    text-align: left; /* Allinea il testo a sinistra */
+    width: 100%; /* Occupa tutta la larghezza della colonna */
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Effetto hover per il pulsante delle categorie */
+.category-button:hover {
+    background-color: #f1f1f1; /* Colore di sfondo al passaggio del mouse */
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #6f6f6f;
+    font-size: 1.5vw;
+    font-family: arial, sans-serif;
+    transition: color 0.3s; /* Aggiunge una transizione morbida quando cambia il colore */
+    white-space: nowrap;
+}
+
+/* Cambia colore quando il link è selezionato, cliccato o attivo */
+nav a:focus,
+nav a:active {
+    color: red;
+}
+
+/* Cambia colore quando l'utente passa il mouse sopra il link */
+nav a:hover {
+    color: red;
+}
+/* Sezione Prodotti */
+section {
+  padding: 2vw;
+}
+h2 {
+  font-size: 2vw;
+}
+h3 {
+  font-size: 1.8vw;
+}
+p {
+  font-size: 1.2vw;
+}
+/* Media Queries per Dispositivi più Piccoli */
+@media (max-width: 768px) {
+  .search-container {
+    width: 80vw; /* La barra di ricerca occupa più spazio sui dispositivi piccoli */
+  }
+  nav {
+    gap: 5vw; /* Maggiore spazio tra i link per evitare che vadano a capo */
+  }
+  .consegna-gratuita {
+    font-size: 3vw; /* Ridimensiona il testo ancora di più sui dispositivi piccoli */
+  }
+  .nome-ditta {
+    font-size: 4vw;
+  }
+  h2, h3 {
+    font-size: 3vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+}
+/* Stili del carosello */
+.carousel {
+  position: relative;
+  width: 80%; /* Mantiene il carosello ad una larghezza moderata, non si espande per tutta la pagina */
+  margin: auto; /* Centra il carosello orizzontalmente */
+  overflow: hidden; /* Nasconde qualsiasi parte che fuoriesce */
+  height: auto; /* Altezza automatica in base alle immagini */
+}
+
+.slides {
+  display: none; /* Nasconde tutte le slide inizialmente */
+}
+
+.carousel img {
+  width: 100%; /* Ridimensiona l'immagine per adattarsi alla larghezza del carosello */
+  max-height: 400px; /* Limita l'altezza massima delle immagini */
+  object-fit: contain; /* Mantiene le proporzioni senza tagliare */
+}
+
+/* Effetto dissolvenza per le immagini */
+.fade {
+  animation: fadeEffect 1.5s; /* Effetto dissolvenza su 1.5 secondi */
+}
+
+@keyframes fadeEffect {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Stili per i pallini sotto */
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171; /* Colore per il pallino attivo */
+}
+/* Contenitore per il carosello e il blocco testo */
+.carousel-container {
+  display: flex; /* Disposizione orizzontale */
+  justify-content: flex-start; /* Posiziona il blocco testo accanto al carosello */
+  align-items: stretch; /* Allinea verticalmente il blocco con il carosello */
+  max-width: 100%; /* Imposta la larghezza massima del contenitore */
+  margin: auto; /* Centra il contenitore nella pagina */
+  gap: 1vw; /* Spazio ridotto tra il carosello e il blocco di testo */
+}
+
+/* Blocca il testo accanto al carosello */
+.carousel-text-block {
+  background-color: #f1f1f1; /* Colore di sfondo simile al carosello */
+  padding: 2vw; /* Spazio interno */
+  width: 25%; /* Imposta la larghezza del blocco di testo */
+  display: flex; /* Usa flexbox per il layout del contenuto */
+  flex-direction: column; /* Imposta i contenuti in verticale */
+  justify-content: center; /* Centra verticalmente il contenuto */
+  text-align: center; /* Testo centrato */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+  height: auto; /* L'altezza si adatta all'immagine */
+}
+.img-offerta {
+    width: 300px; /* Larghezza della piccola foto */
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+    display: block; /* Visualizza come blocco per occupare una nuova riga */
+    margin: 0 auto 10px; /* Centra l'immagine e aggiunge margine inferiore */
+}
+
+/* Stile per il pulsante Acquista */
+.acquista-button {
+  background-color: #2980b9; /* Colore del pulsante */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuovi i bordi */
+  padding: 1vw 2vw; /* Padding interno */
+  font-size: 1.2vw; /* Dimensione del testo */
+  border-radius: 5px; /* Angoli arrotondati */
+  cursor: pointer; /* Mostra il cursore pointer */
+  transition: background-color 0.3s ease; /* Transizione per il background */
+}
+
+.acquista-button:hover {
+  background-color: #1f6691; /* Colore hover */
+}
+
+/* Mantieni le immagini con dimensioni corrette */
+.carousel {
+  width: 70%; /* Imposta il carosello per occupare il 70% dello spazio */
+  position: relative; /* Necessario per il posizionamento assoluto dei puntini */
+}
+
+.carousel img {
+  width: 100%; /* L'immagine occupa tutta la larghezza del carosello */
+  max-height: 500px; /* Altezza massima delle immagini */
+  object-fit: contain; /* Mantiene le proporzioni delle immagini */
+}
+
+/* Stili per i pallini sotto */
+.dots-container {
+  position: absolute; /* Posiziona i pallini sopra le immagini */
+  bottom: 20px; /* Posiziona i pallini in basso all'interno dell'immagine */
+  width: 100%; /* I pallini si centrano rispetto all'immagine */
+  text-align: center; /* Centrato orizzontalmente */
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171; /* Colore per il pallino attivo */
+}
+
+/* Effetto dissolvenza per le immagini */
+.fade {
+  animation: fadeEffect 1.5s; /* Effetto dissolvenza su 1.5 secondi */
+}
+
+@keyframes fadeEffect {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column; /* Impila il carosello e il blocco di testo verticalmente */
+  }
+
+  .carousel {
+    width: 100%; /* Il carosello occupa tutta la larghezza */
+  }
+
+  .carousel-text-block {
+    width: 100%; /* Il blocco di testo occupa tutta la larghezza su schermi piccoli */
+    height: auto; /* Altezza automatica su schermi piccoli */
+  }
+}
+
+/* 3 file prodotti */
+section {
+        margin: 20px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .row div {
+        flex: 1;
+        margin: 0 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .row img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Rettangolo Mensola */
+    .highlight-section {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5px; /* Distanza ridotta tra i rettangoli */
+}
+
+
+    /* Immagine nella sezione Mensola */
+    .highlight-image {
+        width: 35%; /* Ridotto dal 45% al 35% per una dimensione più piccola */
+        max-width: 400px; /* Ridotto da 600px a 400px */
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover; /* Assicura che l'immagine sia quadrata mantenendo il ritaglio appropriato */
+    }
+
+    /* Descrizione nella sezione Mensola */
+    .highlight-description {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .highlight-description h3 {
+        color: #333;
+    }
+
+    /* Sezione Personalizzazione */
+    .customization-section {
+        padding: 30px 20px; /* Ridotto il padding per avvicinare il contenuto */
+        text-align: center;
+        position: relative;
+        background-color: transparent; /* Nessun sfondo */
+        margin-top: 0px; /* Ridotto lo spazio tra il rettangolo Mensola e la sezione Personalizzazione */
+    }
+
+    /* Titolo "PERSONALIZZAZIONE" */
+    .customization-title {
+        font-size: 150px; /* Molto grande */
+        color: rgba(0, 0, 0, 0.1); /* Trasparente */
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1; /* Assicurati che il testo non sia coperto */
+        line-height: 1.1; /* Distanza più ridotta tra le righe */
+    }
+
+    /* Testo di descrizione sopra la scritta "PERSONALIZZAZIONE" */
+    .customization-text {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 25%; /* Ridotto per avvicinare il testo alla scritta "PERSONALIZZAZIONE" */
+        left: 50%;
+        transform: translateX(-50%); /* Allinea perfettamente al centro */
+        z-index: 2;
+    }
+
+    /* Pulsante di contatto */
+    .contact-button {
+        display: inline-block;
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 15px; /* Distanza ridotta tra il titolo e il pulsante */
+    }
+
+    .contact-button:hover {
+        background-color: #0056b3;
+    }
+
+
+
+
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-box {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-box:not(:last-child) {
+            border-right: 1px solid #ccc;
+        }
+
+        .footer-box h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-box h3 img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer-box p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer-lower {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-top: 1px solid #bbb;
+        }
+
+        .footer-lower-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-left, .footer-right {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-left p {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .footer-left p span {
+            font-weight: bold;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .footer-left p span:hover {
+            text-decoration: underline;
+        }
+
+        .footer-left .social-icons {
+    display: flex;
+    gap: 20px; /* Distanza tra le icone */
+    margin-top: 20px; /* Spostate le icone ancora più in basso */
+}
+
+        .footer-left .social-icons a {
+            text-decoration: none;
+        }
+
+        .footer-left .social-icons img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-right ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-right ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer-right ul li + li {
+            margin-top: 10px;
+        }

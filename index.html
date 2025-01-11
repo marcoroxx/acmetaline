@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negozio Online</title>
+</head>
+<body>
+  <!-- rigo consegna gratuita -->
+  <div class="consegna-gratuita">
+     <img src="furgoncino.png" alt="Furgoncino" class="icon-furgoncino">
+     <strong id="Grassetto">Consegna gratuita</strong> per ordini superiori a 100 euro!
+ </div>
+<!-- intestazione -->
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Logo Ditta">
+        <div class="logo-text">
+            <span class="nome-ditta">AC Metaline</span>
+            <span class="slogan">HOME DECOR</span>
+        </div>
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Cerca...">
+        <div class="made-in-italy">
+           <img src="bandiera.png" alt="Bandiera Italiana" class="bandiera-italiana">Made in Italy</div>
+
+        <select class="lingua">
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+</header>
+
+<!-- pulsanti navigazione -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+        <button class="dropbtn">PRODOTTI</button>
+        <div class="dropdown-content" id="dropdownMenu">
+            <div class="column">
+                <button class="category-button">AC Metaline</button>
+                <a href="#">Mensola 1</a>
+                <a href="#">Mensola 2</a>
+                <a href="#">Mensola 3</a>
+            </div>
+            <div class="column">
+                <button class="category-button">Metaldex</button>
+                <a href="#">Prodotto Metaldex 1</a>
+                <a href="#">Prodotto Metaldex 2</a>
+                <a href="#">Prodotto Metaldex 3</a>
+            </div>
+            <div class="column">
+                <button class="category-button">Offerte</button>
+                <a href="#">Offerta 1</a>
+                <a href="#">Offerta 2</a>
+                <a href="#">Offerta 3</a>
+            </div>
+        </div>
+    </div>
+        <a href="C:\Users\marco\Desktop\sito\contatti\contatti.html" class="button">CONTATTI</a> <!-- Pulsante Contatti -->
+        <a href="#">OFFERTE</a>
+        <a href="#"><i class="fas fa-user"></i></a>
+    <!-- Icona Carrello -->
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+
+    <div class="carousel-container">
+  <!-- Carosello di Immagini -->
+  <div class="carousel">
+    <div class="slides fade">
+      <img src="Lugano copper.jpg" style="width:100%">
+    </div>
+    <div class="slides fade">
+      <img src="MyMug.jpg" style="width:100%">
+    </div>
+    <div class="slides fade">
+      <img src="Alberi.jpg" style="width:100%">
+    </div>
+    <div class="slides fade">
+      <img src="Albero rame.jpg" style="width:100%">
+    </div>
+
+    <!-- I 3 pallini sotto -->
+    <div class="dots-container" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <!-- Blocco testo di fianco al carosello -->
+ <div class="carousel-text-block">
+   <img src="foto3.jpg" alt="Immagine Offerta" class="img-offerta">
+   <h3>Offerta Speciale</h3>
+   <p>Scopri i migliori prodotti in offerta! Approfitta subito delle nostre promozioni limitate.</p>
+   <button class="acquista-button">Acquista</button>
+ </div>
+
+</div>
+    <script src="script.js"></script>
+  </div>
+</header>
+
+<section>
+  <h2 style="color: red;">IN EVIDENZA</h2>
+
+    <!-- Prima fila di prodotti -->
+    <div class="row">
+        <div>
+            <h3>Mensola a parete</h3>
+            <img src="mensola parete.jpg" alt="Prodotto 1">
+            <p>Mensola a parete in acciaio. Misura Personalizzabile</p>
+            <p>Prezzo: €500,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+        <div>
+            <h3>Mensola per libri</h3>
+            <img src="mensola libri.webp" alt="Prodotto 2">
+            <p>Mensola per libri in acciaio</p>
+            <p>Prezzo: €49,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+        <div>
+            <h3>Mensola per bagno</h3>
+            <img src="Mensola bagno.jpg" alt="Prodotto 3">
+            <p>Piccola mensola per bagno in acciaio.</p>
+            <p>Prezzo: €39,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+    </div>
+
+    <!-- Seconda fila di prodotti -->
+    <div class="row">
+        <div>
+            <h3>Albero dorato</h3>
+            <img src="albero oro.jpg" alt="Prodotto 4">
+            <p>Albero in acciaio inox color oro della linea Home Decor AC Metaline</p>
+            <p>Prezzo: €89,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+        <div>
+            <h3>Albero dei Nomi</h3>
+            <img src="albero nomi.jpg" alt="Prodotto 5">
+            <p>Unico ed elegante Albero dei nomi dorato. Linea personalizzabile Home Decor AC Metaline</p>
+            <p>Prezzo: €140,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+        <div>
+            <h3>Fuoriporta</h3>
+            <img src="fuoriporta.jpg" alt="Prodotto 6">
+            <p>Elegante fuoriporta dorato in acciaio inox della linea Home Decor AC Metaline</p>
+            <p>Prezzo: €140,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+    </div>
+
+    <!-- Terza fila di prodotti -->
+    <div class="row">
+        <div>
+            <h3>Babatex 50cm</h3>
+            <img src="babatex 50.jpg" alt="Prodotto 7">
+            <p>Sottopensile della Metaltex Pratico e funzionale.</p>
+            <p>Prezzo: €18,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+        <div>
+            <h3>Thunder</h3>
+            <img src="thunder.jpg" alt="Prodotto 8">
+            <p>Stendibiancheria verticale a 3 piani della Metlaltex</p>
+            <p>Prezzo: €55,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+        <div>
+            <h3>Pratico</h3>
+            <img src="pratico.jpg" alt="Prodotto 9">
+            <p>Scolapiatti pieghevole con vassoio della Metaltex</p>
+            <p>Prezzo: €25,00</p>
+            <button>Aggiungi al carrello</button>
+        </div>
+    </div>
+    <!-- Rettangolo grande con immagine e descrizione -->
+    <div class="highlight-section">
+    <img src="mensola parete.jpg" alt="Mensola Speciale" class="highlight-image">
+    <div class="highlight-description">
+        <h3>La nostra Mensola Esclusiva</h3>
+        <p>
+            Questa mensola è realizzata con acciaio di altissima qualità, garantendo resistenza e durata nel tempo.
+            Prodotta artigianalmente, ogni pezzo è unico e personalizzabile.
+        </p>
+        <p>
+            <strong>Materiale:</strong> Acciaio inox<br>
+            <strong>Misure:</strong> Larghezza: 120cm, Profondità: 30cm, Altezza: 15cm<br>
+            <strong>Finitura:</strong> Spazzolata<br>
+        </p>
+        <p>Questa mensola unisce design moderno e funzionalità, perfetta per ogni ambiente.</p>
+    </div>
+</div>
+
+<!-- Nuovo rettangolo sotto -->
+<div class="customization-section">
+    <h2 class="customization-title">PERSONALIZZA</h2>
+    <p class="customization-text">Contatta i nostri esperti per personalizzare i nostri articoli, dalle mensole agli articoli home decor. Rendi unico il tuo prodotto.</p>
+    <a href="/pagina-contatti" class="contact-button">Contattaci</a>
+</div>
+
+
+
+    </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+        <div class="footer-box">
+            <h3><img src="bandiera.png" alt="Bandiera Italiana">Articoli 100% Made in Italy</h3>
+            <p>Qualità garantita</p>
+        </div>
+        <div class="footer-box">
+            <h3><img src="furgoncino.png" alt="Furgoncino">Spedizione rapida e sicura</h3>
+            <p>Gratuita per ordini sopra i 100€</p>
+        </div>
+        <div class="footer-box">
+            <h3><img src="telefono.jpg" alt="Telefono">Contattaci</h3>
+            <p>Gli esperti sono al vostro servizio</p>
+        </div>
+    </div>
+    <div class="footer-lower">
+        <div class="footer-lower-container">
+            <div class="footer-left">
+                <p><span>Registrati</span> per rimanere informato su tutte le offerte:</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/acmetaline/" target="_blank">
+                        <img src="instagram.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61569085841861" target="_blank">
+                        <img src="facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li>METALTEX</li>
+                    <li>MENSOLE AC METALINE</li>
+                    <li>ARTICOLI HOME DECOR</li>
+                </ul>
+                <ul>
+                    <li>CONTATTI</li>
+                    <li>CARRELLO</li>
+                    <li>METODI DI PAGAMENTO</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p>&copy; 2024 Negozio Online. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
